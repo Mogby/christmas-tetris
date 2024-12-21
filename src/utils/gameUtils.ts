@@ -83,14 +83,28 @@ export const lockPiece = (
 
   // Check for completed lines
   let linesCleared = 0;
+  const completedLines: number[] = [];
+
+  // First, identify all completed lines
   for (let y = BOARD_HEIGHT - 1; y >= 0; y--) {
     if (newBoard[y].every(cell => cell.filled)) {
-      // Remove the line and add empty line at top
-      newBoard.splice(y, 1);
+      completedLines.push(y);
+      linesCleared++;
+    }
+  }
+
+  // Then remove them all at once
+  if (completedLines.length > 0) {
+    // Remove all completed lines
+    completedLines.forEach(line => {
+      newBoard.splice(line, 1);
+    });
+
+    // Add new empty lines at the top
+    for (let i = 0; i < completedLines.length; i++) {
       newBoard.unshift(Array(BOARD_WIDTH).fill(null).map(() => 
         ({ filled: false, color: 'cyan' })
       ));
-      linesCleared++;
     }
   }
 

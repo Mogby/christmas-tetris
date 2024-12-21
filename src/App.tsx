@@ -8,6 +8,7 @@ import styles from './App.module.css';
 const App: React.FC = () => {
   const {
     board,
+    currentPiece,
     score,
     gameOver,
     isPaused,
@@ -28,7 +29,7 @@ const App: React.FC = () => {
             {isPaused ? 'Start' : 'Pause'}
           </button>
         </div>
-        <Board board={board} />
+        <Board board={board} currentPiece={currentPiece} />
         <Controls
           onMoveLeft={moveLeft}
           onMoveRight={moveRight}

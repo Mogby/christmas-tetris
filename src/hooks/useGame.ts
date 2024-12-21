@@ -98,6 +98,7 @@ export const useGame = () => {
 
   return {
     board,
+    currentPiece,
     score,
     gameOver,
     isPaused,
