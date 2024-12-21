@@ -12,58 +12,58 @@ interface TetrominoConfig {
 
 export const TETROMINOES: TetrominoConfig[] = [
   {
-    // I piece
+    // I piece - Ice Blue
     shape: [
       [true, true, true, true]
     ],
-    color: 'cyan'
+    color: 'ice'
   },
   {
-    // J piece
+    // J piece - Dark Green (Christmas Tree)
     shape: [
       [true, false, false],
       [true, true, true]
     ],
-    color: 'blue'
+    color: 'pine'
   },
   {
-    // L piece
+    // L piece - Gold
     shape: [
       [false, false, true],
       [true, true, true]
     ],
-    color: 'orange'
+    color: 'gold'
   },
   {
-    // O piece
+    // O piece - Red (Christmas Ball)
     shape: [
       [true, true],
       [true, true]
     ],
-    color: 'yellow'
+    color: 'berry'
   },
   {
-    // S piece
+    // S piece - Silver
     shape: [
       [false, true, true],
       [true, true, false]
     ],
-    color: 'green'
+    color: 'silver'
   },
   {
-    // T piece
+    // T piece - White (Snow)
     shape: [
       [false, true, false],
       [true, true, true]
     ],
-    color: 'purple'
+    color: 'snow'
   },
   {
-    // Z piece
+    // Z piece - Red (Candy Cane)
     shape: [
       [true, true, false],
       [false, true, true]
     ],
-    color: 'red'
+    color: 'candy'
   }
 ]; 

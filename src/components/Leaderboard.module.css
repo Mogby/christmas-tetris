@@ -3,12 +3,14 @@
   padding: 20px;
   border-radius: 8px;
   min-width: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .leaderboard h2 {
   margin: 0 0 20px 0;
   text-align: center;
-  color: #fff;
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
 
 .leaderboard ul {
@@ -20,10 +22,11 @@
 .leaderboard li {
   padding: 8px 10px;
   margin-bottom: 5px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .form {

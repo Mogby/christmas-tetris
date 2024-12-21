@@ -8,7 +8,7 @@ export interface Cell {
   color: TetrominoColor;
 }
 
-export type TetrominoColor = 'cyan' | 'blue' | 'orange' | 'yellow' | 'green' | 'purple' | 'red';
+export type TetrominoColor = 'ice' | 'pine' | 'gold' | 'berry' | 'silver' | 'snow' | 'candy';
 
 export interface Tetromino {
   shape: boolean[][];
